@@ -1,0 +1,39 @@
+{
+  "version": "0.0.1",
+  "git_url": "https://github.com/GBN-DBP/ocrd-page-xml-draw",
+  "tools": {
+    "ocrd-page-xml-draw": {
+      "executable": "ocrd-page-xml-draw",
+      "categories": [
+        "Layout analysis"
+      ],
+      "description": "Draws the specified layout annotations of PAGE-XML",
+      "steps": [
+        "layout/analysis"
+      ],
+      "input_file_grp": [
+        "OCR-D-SEG"
+      ],
+      "output_file_grp": [
+        "OCR-D-DRAW"
+      ],
+      "parameters": {
+        "output-format": {
+          "type": "string",
+          "description": "File format of output",
+          "enum": [
+            "image/png",
+            "text/html"
+          ],
+          "default": "image/png"
+        },
+        "profile": {
+          "type": "string",
+          "description": "Path to profile file",
+          "required": true,
+          "cacheable": true
+        }
+      }
+    }
+  }
+}

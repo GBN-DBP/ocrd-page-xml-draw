@@ -1,0 +1,6 @@
+click
+ocrd
+numpy
+pillow
+opencv-python-headless
+page-xml-draw
